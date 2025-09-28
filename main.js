@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (hamburger && mobileNav) {
     hamburger.addEventListener('click', () => {
       hamburger.classList.toggle('open');
-      mobileNav.classList.toggle('active');
+      mobileNav.classList.toggle('open');
     });
 
     // إغلاق القائمة عند الضغط على أي رابط

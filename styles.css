@@ -327,7 +327,7 @@
   
     .main-nav { display: none; }
     .hamburger { display: flex; }
-    .mobile-nav.active { display: flex; }
+    .mobile-nav.open { display: flex; }
   
     .lang-switcher {
       gap: .3rem;
