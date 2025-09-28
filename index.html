@@ -1,0 +1,172 @@
+<!-- File: index.html -->
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="بورتفوليو احترافي — تصميم جرافيك، تجارب AR، وكود. واجهة هيرو متحركة وجاهزة للـ3D." />
+  <meta name="theme-color" content="#071022" />
+  <title>بورتفوليو — <span data-i18n="brandName">محمد محمود</span></title>
+  <!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Flags CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css">
+
+  <!-- Favicon placeholder -->
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+<body class="site-root">
+
+  <!-- Header / Nav -->
+  <header class="site-header" role="banner">
+    <div class="container nav-wrap">
+      <a class="brand" href="#" aria-label="الصفحة الرئيسية">
+        <span class="brand-logo" aria-hidden="true">CC</span>
+        <span class="brand-name" data-i18n="brandName">محمد محمود</span>
+      </a>
+
+      <nav class="main-nav" role="navigation" aria-label="القائمة الرئيسية">
+        <ul>
+          <li><a href="works.html" data-i18n="navWork">أعمال</a></li>
+          <li><a href="more.html" id="nav-more" data-i18n="navMore">المزيد</a></li>
+          <li><a href="contact.html" data-i18n="navContact">اتصل</a></li>
+        </ul>
+      </nav>
+
+      <!-- اختيار اللغة بالأعلام -->
+      <div class="lang-switcher">
+        <span class="flag" data-lang="ar" title="العربية"><span class="fi fi-sa"></span></span>
+        <span class="flag" data-lang="en" title="English"><span class="fi fi-us"></span></span>
+
+      <!-- زر الهامبرجر (للموبايل) -->
+      <div class="hamburger" aria-label="قائمة الهاتف" role="button" tabindex="0">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <!-- قائمة الموبايل -->
+    <div class="mobile-nav" role="navigation" aria-label="القائمة الجانبية">
+      <a href="works.html" data-i18n="navWork">أعمال</a>
+      <a href="more.html" data-i18n="navMore">المزيد</a>
+      <a href="contact.html" data-i18n="navContact">اتصل</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="main" role="main">
+    <section class="hero section-hero" aria-labelledby="hero-heading">
+      <div class="container hero-grid">
+
+        <!-- LEFT: TYPO + CTA -->
+        <div class="hero-content">
+          <div class="lead-line" aria-hidden="true"></div>
+
+          <div class="intro">
+            <div class="small-note" data-i18n="heroHello">مرحباً، أنا</div>
+            <h1 id="hero-heading" class="hero-title" data-i18n="heroTitle">
+              مطوّر <span class="accent">مبدع</span> + مصمم
+            </h1>
+          </div>
+
+          <p class="hero-sub" data-i18n="heroSub">
+            أبتكر تجارب واقع معزز (AR)، تصميمات جرافيك عالية الجودة، وكود منظّم وقابل للإنتاج — أوازن بين الجمال والهيكل.
+          </p>
+
+          <div class="hero-ctas">
+            <button class="btn-primary" id="btn-read-more" data-i18n="btnReadMore">اقرأ المزيد</button>
+            <a class="btn-ghost" href="mailto:you@example.com" data-i18n="btnContact">تواصل معي →</a>
+          </div>
+
+          <div class="status-row" aria-hidden="true">
+            <span class="status-dot"></span>
+            <span class="status-text" data-i18n="statusText">متاح للعمل · AR · جرافيك · كود</span>
+          </div>
+        </div>
+
+        <!-- RIGHT: Canvas + صورة -->
+        <div class="hero-visual" aria-hidden="false">
+          <!-- عنصر الكانفاس -->
+          <div id="three-canvas" class="three-canvas" role="img" aria-label="عرض ثلاثي الأبعاد"></div>
+
+          <!-- مكان إضافة صورة -->
+          <div class="profile-img-wrap">
+            <img src="your-photo.jpg" alt="صورة شخصية أو بورتفوليو" class="profile-img">
+          </div>
+
+          <!-- Overlay badges -->
+          <div class="visual-badge badge-top-left">AR • Motion</div>
+          <div class="visual-svg" aria-hidden="true">
+            <svg width="84" height="84" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="6" width="88" height="88" rx="18" stroke="rgba(255,255,255,0.06)" stroke-width="2" />
+              <circle cx="50" cy="40" r="6" fill="#7C3AED" />
+              <rect x="30" y="56" width="40" height="6" rx="3" fill="#06B6D4" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- More / Selected Works -->
+    <section id="more-section" class="section-more">
+      <div class="container">
+        <h2 class="section-title" data-i18n="sectionMoreTitle">نماذج مختارة</h2>
+        <div class="cards-grid" id="work">
+          <article class="card">
+            <div class="card-meta" data-i18n="card1Meta">AR EXPERIENCE</div>
+            <h3 class="card-title" data-i18n="card1Title">تجربة قياس افتراضية</h3>
+            <p class="card-desc" data-i18n="card1Desc">تجربة AR markerless مع شيدر للواقعية.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-meta" data-i18n="card2Meta">BRANDING</div>
+            <h3 class="card-title" data-i18n="card2Title">هوية رقمية عصرية</h3>
+            <p class="card-desc" data-i18n="card2Desc">شعارات، أنظمة طباعة وحركة لعلامات رقمية.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-meta" data-i18n="card3Meta">WEB APP</div>
+            <h3 class="card-title" data-i18n="card3Title">لوحة تحكم آنية</h3>
+            <p class="card-desc" data-i18n="card3Desc">React + WebSocket لتحديثات في الوقت الحقيقي.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer / Contact -->
+  <footer id="contact" class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p class="footer-cta" data-i18n="footerCta">هل تريد العمل معاً؟ <a href="mailto:you@example.com">راسلني</a></p>
+      <p class="copyright" data-i18n="footerCopy">© <span id="year"></span> محمد محمود. كل الحقوق محفوظة.</p>
+    </div>
+
+    <div class="social-links">
+        <a href="https://facebook.com/yourprofile" target="_blank" aria-label="فيسبوك">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://instagram.com/yourprofile" target="_blank" aria-label="إنستجرام">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="لينكدإن">
+          <i class="bi bi-linkedin"></i>
+        </a>
+      </div>
+      
+  </footer>
+
+  <!-- Scripts -->
+  <script src="main.js" defer></script>
+</body>
+</html>
