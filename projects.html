@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مشاريعي - بورتفوليو</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="bg-canvas"></div>
+
+  <!-- الترويسة -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">بورتفوليو</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="about.html">من أنا</a></li>
+          <li><a href="projects.html">المشاريع</a></li>
+          <li><a href="contact.html">تواصل</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- المشاريع -->
+  <main class="container" style="padding-top: 7rem;">
+    <section class="features">
+      <h2 class="headline" style="text-align:center; margin-bottom:2rem;">مشاريعي</h2>
+      <div class="features-grid">
+        <div class="card" data-delay="0">
+          <div class="project-gallery">
+            <img src="images/project1-1.jpg" alt="صورة مشروع 1">
+            <img src="images/project1-2.jpg" alt="صورة مشروع 1">
+            <img src="images/project1-3.jpg" alt="صورة مشروع 1">
+          </div>
+          <h3>شركة ألفا</h3>
+          <p>تصميم وتطوير موقع شخصي باستخدام HTML, CSS, JavaScript بتصميم حديث ومتجاوب.</p>
+        </div>
+
+        <div class="card" data-delay="150">
+          <div class="project-gallery">
+            <img src="images/project2-1.jpg" alt="صورة مشروع 2">
+            <img src="images/project2-2.jpg" alt="صورة مشروع 2">
+          </div>
+          <h3>شركة بيتا</h3>
+          <p>بناء واجهة متجر الكتروني مع عربة التسوق وتجربة مستخدم محسنة.</p>
+        </div>
+
+        <div class="card" data-delay="300">
+          <div class="project-gallery">
+            <img src="images/project3-1.jpg" alt="صورة مشروع 3">
+            <img src="images/project3-2.jpg" alt="صورة مشروع 3">
+          </div>
+          <h3>شركة جاما</h3>
+          <p>تطوير لوحة تحكم تفاعلية باستخدام React و Chart.js لعرض الإحصائيات.</p>
+        </div>
+
+        <div class="card" data-delay="450">
+          <div class="project-gallery">
+            <img src="images/project4-1.jpg" alt="صورة مشروع 4">
+            <img src="images/project4-2.jpg" alt="صورة مشروع 4">
+            <img src="images/project4-3.jpg" alt="صورة مشروع 4">
+          </div>
+          <h3>شركة دلتا</h3>
+          <p>تصميم مدونة تقنية مع دعم نظام المقالات، التصنيفات والبحث.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- التذييل -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> جميع الحقوق محفوظة</p>
+      <div class="footer-nav">
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

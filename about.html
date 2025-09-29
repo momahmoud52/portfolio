@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>من أنا — محفظتي</title>
+  <meta name="description" content="تعرف عليّ — صفحة من أنا من المحفظة الإلكترونية.">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="bg-canvas" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">محفظتي</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="about.html" class="active">من أنا</a></li>
+          <li><a href="projects.html">المشاريع</a></li>
+          <li><a href="contact.html">اتصل بي</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="min-height:60vh;display:flex;align-items:center;">
+      <div class="container">
+        <h1 class="headline">من أنا</h1>
+        <p class="subhead">تعرف أكثر عليّ وعلى مسيرتي المهنية ومهاراتي.</p>
+      </div>
+    </section>
+  
+    <!-- النبذة والرؤية -->
+    <section class="features">
+      <div class="container">
+        <div class="card slide-up" data-delay="0">
+          <h3>نبذة شخصية</h3>
+          <p>
+            أنا مطوّر واجهات أمامية ومصمم تجربة مستخدم، أعشق تحويل الأفكار إلى مواقع وتطبيقات تفاعلية.
+          </p>
+        </div>
+        <div class="card slide-up" data-delay="150">
+          <h3>الرؤية</h3>
+          <p>
+            هدفي هو بناء تجارب رقمية عصرية ذات تأثير، تجمع بين الجمال وسهولة الاستخدام.
+          </p>
+        </div>
+      </div>
+    </section>
+  
+    <!-- التعليم -->
+    <section class="features">
+      <div class="container">
+        <h2 class="headline" style="margin-bottom:2rem;">التعليم</h2>
+        <div class="card slide-up" data-delay="0">
+          <h3>بكالوريوس علوم الحاسوب</h3>
+          <p>جامعة القاهرة — 2017 - 2021</p>
+        </div>
+        <div class="card slide-up" data-delay="150">
+          <h3>دورات وشهادات</h3>
+          <p>شهادة Frontend من Udacity — 2022</p>
+        </div>
+      </div>
+    </section>
+  
+    <!-- الخبرات -->
+    <section class="features">
+      <div class="container">
+        <h2 class="headline" style="margin-bottom:2rem;">الخبرات</h2>
+        <div class="card slide-up" data-delay="0">
+          <h3>شركة ABC للتقنية</h3>
+          <p>مطور واجهات أمامية — 2021 - 2023</p>
+        </div>
+        <div class="card slide-up" data-delay="150">
+          <h3>شركة XYZ للحلول الرقمية</h3>
+          <p>مصمم UI/UX — 2019 - 2021</p>
+        </div>
+      </div>
+    </section>
+  
+    <!-- المهارات -->
+    <section class="features">
+      <div class="container">
+        <h2 class="headline" style="margin-bottom:2rem;">المهارات</h2>
+        <div class="features-grid">
+          <div class="card slide-up" data-delay="0">
+            <h3>HTML / CSS</h3>
+            <p>متقدم</p>
+          </div>
+          <div class="card slide-up" data-delay="150">
+            <h3>JavaScript</h3>
+            <p>متوسط - متقدم</p>
+          </div>
+          <div class="card slide-up" data-delay="300">
+            <h3>React</h3>
+            <p>متوسط</p>
+          </div>
+          <div class="card slide-up" data-delay="450">
+            <h3>UI/UX Design</h3>
+            <p>متقدم</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> جميع الحقوق محفوظة</p>
+      <div class="footer-nav">
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js" defer></script>
+</body>
+</html>
