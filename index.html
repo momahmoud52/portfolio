@@ -16,40 +16,19 @@
   <!-- خلفية مستقبلية (سيتم التحكم بها بالـ CSS و/أو JS) -->
   <div id="bg-canvas" aria-hidden="true"></div>
 
-  <header class="site-header">
-    <div class="container header-flex">
-      <a class="logo" href="index.html">محفظتي</a>
-      <nav class="main-nav desktop-nav">
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a class="logo" href="index.html" aria-label="الانتقال إلى الصفحة الرئيسية">بورتفوليو</a>
+      <nav class="main-nav" role="navigation" aria-label="القائمة الرئيسية">
         <ul>
           <li><a href="index.html">الرئيسية</a></li>
-          <li><a href="about.html">من أنا</a></li>
+          <li><a href="about.html" class="active">عني</a></li>
           <li><a href="projects.html">المشاريع</a></li>
-          <li><a href="contact.html">اتصل بي</a></li>
+          <li><a href="contact.html">للتواصل</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  
-  <!-- شريط سفلي للجوال -->
-  <nav class="mobile-nav">
-    <a href="index.html">
-      <span>🏠</span>
-      <small>الرئيسية</small>
-    </a>
-    <a href="about.html">
-      <span>👤</span>
-      <small>من أنا</small>
-    </a>
-    <a href="projects.html">
-      <span>💼</span>
-      <small>المشاريع</small>
-    </a>
-    <a href="contact.html">
-      <span>✉️</span>
-      <small>تواصل</small>
-    </a>
-  </nav>
-  
 
   <main>
     <!-- HERO SECTION -->
