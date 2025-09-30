@@ -325,38 +325,37 @@ html, body {
   margin: 0;
   color: #ccc;
 }
-
-/* ✅ شريط القوائم على الهاتف */
+/* ✅ شريط القوائم على الهاتف بشكل صغير وأنيق */
 @media (max-width: 768px) {
   .site-header .container {
-    flex-direction: column; /* يخلي الشعار فوق والقوائم تحت */
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    padding: 0.5rem 0;
+    padding: 0.6rem 0;
   }
 
   .logo {
-    margin-bottom: 0.8rem;
-    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
   }
 
   .main-nav ul {
-    flex-direction: row; /* يخلي القوائم أفقية */
+    flex-direction: row;
     justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap; /* لو القائمة طويلة ترجع للسطر */
+    gap: 0.5rem;
   }
 
   .main-nav a {
-    font-size: 1rem;
-    padding: 0.5rem 0.8rem;
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.05);
+    font-size: 0.85rem;
+    padding: 0.35rem 0.7rem;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(6, 245, 255, 0.15);
     transition: all 0.3s ease;
   }
 
   .main-nav a:hover {
-    background: rgba(0, 245, 255, 0.2);
+    background: rgba(6, 245, 255, 0.15);
     color: #06f5ff;
   }
 }
