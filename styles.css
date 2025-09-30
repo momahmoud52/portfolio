@@ -326,58 +326,58 @@ html, body {
   color: #ccc;
 }
 
-/* Header Flex */
-.header-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* Desktop Nav */
+.desktop-nav {
+  display: block;
 }
-
-/* زر المنيو */
-.menu-toggle {
-  display: none;
-  font-size: 2rem;
-  color: #00f5ff;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-/* قائمة الهاتف */
-.main-nav {
-  transition: max-height 0.4s ease, opacity 0.4s ease;
-}
-.main-nav ul {
-  list-style: none;
+.desktop-nav ul {
   display: flex;
   gap: 1.5rem;
 }
-.main-nav.open {
-  max-height: 500px;
-  opacity: 1;
+.desktop-nav a {
+  color: #f5f5f5;
+  font-weight: 500;
+  text-decoration: none;
 }
-.main-nav.closed {
-  max-height: 0;
-  opacity: 0;
-  overflow: hidden;
+.desktop-nav a:hover {
+  color: #00f5ff;
 }
 
-/* موبايل */
+/* Mobile Nav */
+.mobile-nav {
+  display: none;
+}
+
 @media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
+  .desktop-nav {
+    display: none;
   }
-  .main-nav ul {
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem 0;
-  }
-  .main-nav {
+  .mobile-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.9);
-    border-radius: 0 0 1rem 1rem;
-    position: absolute;
-    top: 100%;
-    right: 0;
+    background: rgba(0,0,0,0.9);
+    padding: 0.5rem 0;
+    z-index: 1000;
+    border-top: 2px solid #00f5ff;
+  }
+  .mobile-nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #f5f5f5;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .mobile-nav a small {
+    font-size: 0.75rem;
+  }
+  .mobile-nav a:hover {
+    color: #00f5ff;
   }
 }
