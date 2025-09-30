@@ -326,3 +326,58 @@ html, body {
   color: #ccc;
 }
 
+/* Header Flex */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* زر المنيو */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: #00f5ff;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* قائمة الهاتف */
+.main-nav {
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.main-nav.open {
+  max-height: 500px;
+  opacity: 1;
+}
+.main-nav.closed {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+/* موبايل */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  .main-nav ul {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+  .main-nav {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 0 0 1rem 1rem;
+    position: absolute;
+    top: 100%;
+    right: 0;
+  }
+}

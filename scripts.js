@@ -138,3 +138,16 @@ function animateParticles() {
 }
 
 animateParticles();
+// منيو الهاتف
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleBtn = document.querySelector(".menu-toggle");
+  const nav = document.querySelector(".main-nav");
+
+  if (toggleBtn && nav) {
+    nav.classList.add("closed");
+    toggleBtn.addEventListener("click", () => {
+      nav.classList.toggle("open");
+      nav.classList.toggle("closed");
+    });
+  }
+});
