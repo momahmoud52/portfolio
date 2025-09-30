@@ -368,3 +368,23 @@ html, body {
     color: #06f5ff;
   }
 }
+
+.lang-switch {
+  margin-right: 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.lang-switch a {
+  color: #f5f5f5;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.lang-switch a.active {
+  color: #06f5ff;
+}
+
+.lang-switch a:hover {
+  color: #06f5ff;
+}
