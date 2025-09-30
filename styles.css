@@ -326,3 +326,37 @@ html, body {
   color: #ccc;
 }
 
+/* ✅ شريط القوائم على الهاتف */
+@media (max-width: 768px) {
+  .site-header .container {
+    flex-direction: column; /* يخلي الشعار فوق والقوائم تحت */
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+
+  .logo {
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+  }
+
+  .main-nav ul {
+    flex-direction: row; /* يخلي القوائم أفقية */
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap; /* لو القائمة طويلة ترجع للسطر */
+  }
+
+  .main-nav a {
+    font-size: 1rem;
+    padding: 0.5rem 0.8rem;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+  }
+
+  .main-nav a:hover {
+    background: rgba(0, 245, 255, 0.2);
+    color: #06f5ff;
+  }
+}
