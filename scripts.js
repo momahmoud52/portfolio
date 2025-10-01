@@ -138,3 +138,69 @@ function animateParticles() {
 }
 
 animateParticles();
+
+// ✅ Lightbox مع التنقل بين الصور
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const lightboxClose = document.getElementById("lightbox-close");
+const prevBtn = document.getElementById("lightbox-prev");
+const nextBtn = document.getElementById("lightbox-next");
+
+let currentGallery = [];
+let currentIndex = 0;
+
+document.querySelectorAll(".project-gallery").forEach(gallery => {
+  const images = gallery.querySelectorAll("img");
+
+  images.forEach((img, index) => {
+    img.addEventListener("click", () => {
+      currentGallery = [...images];
+      currentIndex = index;
+      showImage();
+      lightbox.classList.add("active");
+    });
+  });
+});
+
+function showImage() {
+  lightboxImg.src = currentGallery[currentIndex].src;
+}
+
+// إغلاق
+lightboxClose.addEventListener("click", () => {
+  lightbox.classList.remove("active");
+});
+
+// تنقل بالأسهم
+nextBtn.addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) % currentGallery.length;
+  showImage();
+});
+
+prevBtn.addEventListener("click", () => {
+  currentIndex = (currentIndex - 1 + currentGallery.length) % currentGallery.length;
+  showImage();
+});
+
+// إغلاق بالضغط بالخارج
+lightbox.addEventListener("click", (e) => {
+  if (e.target === lightbox) {
+    lightbox.classList.remove("active");
+  }
+});
+
+// دعم أسهم الكيبورد
+document.addEventListener("keydown", (e) => {
+  if (!lightbox.classList.contains("active")) return;
+  if (e.key === "ArrowRight") {
+    currentIndex = (currentIndex + 1) % currentGallery.length;
+    showImage();
+  }
+  if (e.key === "ArrowLeft") {
+    currentIndex = (currentIndex - 1 + currentGallery.length) % currentGallery.length;
+    showImage();
+  }
+  if (e.key === "Escape") {
+    lightbox.classList.remove("active");
+  }
+});
